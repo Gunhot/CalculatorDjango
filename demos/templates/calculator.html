@@ -1,0 +1,25 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>이건화가 만듬</h1>
+        <form action="">
+            <!-- text형식으로 받는 input을 num1이라 하겠다 -->
+            <input type="text" name="num1">
+            <!-- option에서 select한 값을 operators라 하겠다. -->
+            <select name="operators">
+                <option name="+">+</option>
+                <option name="-">-</option>
+                <option name="*">*</option>
+                <option name="/">/</option>
+            </select>
+            <input type="text" name="num2">
+            <input type="submit">
+            <!--return render(request, 'calculator.html', {'a' : result})
+                여기서 calculator.html에 result의 값이 result라는 이름으로 넘어가게 됨-->
+            <br/>
+            결과값 : {{a}}
+            
+        </form>
+    </body>
+</html>
